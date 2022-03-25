@@ -2,14 +2,7 @@ import React from 'react';
 
 const ErrorExample = () => {
   let title= 'random title';
-  const handleClick = () =>{
-    title = 'hello people;'
-console.log(title)
-
-
-  }
-  return (
-  <React.Fragment>
+  return <React.Fragment>
 <h2>
   {title}
   <button type="button" className='btn' onClick={handleClick}>Change Title</button>
@@ -17,7 +10,6 @@ console.log(title)
 
 
   </React.Fragment>
-  )
 };
 
 export default ErrorExample;

@@ -1,11 +1,5 @@
 import React, { useState } from 'react';
 //useState - function
-
-//use
-//component name must be uppercase
-//must be in the function/component body
-//cannot call conditionally
-
 const UseStateBasics = () => {
   // console.log(useState('hello world'))
   // const value = useState(1)[0]
@@ -14,12 +8,9 @@ const UseStateBasics = () => {
 
   const [text, setText] = useState('random title')
     const handleClick = () =>{
-if (text === 'random title'){
-setText('hello world')
-}else{
-setText('random title')
 
-}
+setText('hello world')
+    
   }
   return (
   <React.Fragment>
