@@ -9,16 +9,7 @@ const reset =() =>{
 setValue(0)
 
 }
-const complexIncrease =() =>{
 
-  setTimeout(()=>{
-    //setValue(value +1)
-
-    setValue((prevState)=>{
-      return prevState+1
-    })
-  }, 2000)
-}
   return (
   <>
   
@@ -38,7 +29,7 @@ const complexIncrease =() =>{
     <h2>more complex counter</h2>
     <h1>{value}</h1>
   
-    <button className='btn' onClick={complexIncrease}>increase later</button>
+    <button className='btn'>increase later</button>
   </section>
   </>
   );

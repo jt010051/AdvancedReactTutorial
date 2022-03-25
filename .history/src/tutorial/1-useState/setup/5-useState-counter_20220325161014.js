@@ -12,11 +12,7 @@ setValue(0)
 const complexIncrease =() =>{
 
   setTimeout(()=>{
-    //setValue(value +1)
-
-    setValue((prevState)=>{
-      return prevState+1
-    })
+    setValue(value +1)
   }, 2000)
 }
   return (
