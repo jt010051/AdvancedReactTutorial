@@ -17,7 +17,7 @@ return()=>{
   window.removeEventListener('resize', checkSize)
 }
 
-  },[])
+  })
   console.log('render');
   return <>
   <h1>window</h1>

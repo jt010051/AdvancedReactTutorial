@@ -9,16 +9,12 @@ const checkSize=() =>{
   setSize(window.innerWidth)
 }
   useEffect(()=>{
-console.log('useEffect')
+
 window.addEventListener('resize', checkSize)
-return()=>{
 
-  console.log('cleanup')
-  window.removeEventListener('resize', checkSize)
-}
 
-  },[])
-  console.log('render');
+  })
+  console.log(size);
   return <>
   <h1>window</h1>
   <h2>{size} PX</h2>
