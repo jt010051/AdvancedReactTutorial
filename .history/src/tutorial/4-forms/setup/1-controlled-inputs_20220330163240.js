@@ -8,22 +8,9 @@ import React, { useState } from 'react';
 const ControlledInputs = () => {
   const [firstName, setFirstName] = useState('')
   const [email, setEmail] = useState('')
-  const[people, setPeople]=useState([])
  const handleSubmit = (e)=>{
 e.preventDefault();
-if(firstName && email){
-const person ={firstName,email}
-setPeople((people)=>{
-
-return [...people, person]
-
-})
-setFirstName('')
-setEmail('')
-}
-else{
-  console.log('empty values')
-}
+console.log('hello world')
   }
   return <>
   <article>
@@ -39,7 +26,7 @@ else{
       <div className="form-control">
 
         <label htmlFor="email">Email : </label>
-        <input type="text" name="email" id="email" value={email}onChange= {(e)=>setEmail(e.target.value)}/>
+        <input type="text" name="email" id="email" value={email}/>
       </div>
       <button type='submit'>add person</button>
     </form>

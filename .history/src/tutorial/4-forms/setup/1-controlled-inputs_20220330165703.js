@@ -12,14 +12,8 @@ const ControlledInputs = () => {
  const handleSubmit = (e)=>{
 e.preventDefault();
 if(firstName && email){
-const person ={firstName,email}
-setPeople((people)=>{
+const person ={firstName:firstName,email:email}
 
-return [...people, person]
-
-})
-setFirstName('')
-setEmail('')
 }
 else{
   console.log('empty values')
