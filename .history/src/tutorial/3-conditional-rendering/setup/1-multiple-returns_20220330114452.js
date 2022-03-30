@@ -8,15 +8,7 @@ useEffect(()=>{
   fetch(url)
   .then((resp)=>{
 
-    if(resp.status>=200 && resp.status<=299){
-
-      return resp.json()
-    }
-    else{
-      setIsLoading(false)
-      setIsError(true)
-      throw new Error (resp.statusText)
-    }
+    if(res)
   })
   .then((user)=> {
 

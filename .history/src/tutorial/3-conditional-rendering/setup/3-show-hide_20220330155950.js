@@ -2,14 +2,11 @@ import React, { useState, useEffect } from 'react';
 
 const ShowHide = () => {
   const [show, setshow] =useState(false)
-return(
-<>
+return<>
 <button className='btn' onClick={()=> setshow(!show)}>show/hide</button>
 {show && <Item />}
 
-</>
-);
-};
+</>};
 
 
 const Item =() =>{
@@ -18,10 +15,10 @@ const checkSize = () =>{
   setSize(window.innerWidth)
 }
 useEffect(()=>{
-window.addEventListener('resize', checkSize);
-return ()=>{
-  window.removeEventListener('resize', checkSize);
-};
+window.addEventListener('resize', checkSize)
+// return ()=>{
+//   window.removeEventListener('resize', checkSize);
+// };
 }, []);
   return(
      <div style={{marginTop: '2rem'}}>

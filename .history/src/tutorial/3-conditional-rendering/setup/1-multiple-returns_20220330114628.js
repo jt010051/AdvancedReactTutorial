@@ -15,7 +15,6 @@ useEffect(()=>{
     else{
       setIsLoading(false)
       setIsError(true)
-      throw new Error (resp.statusText)
     }
   })
   .then((user)=> {
