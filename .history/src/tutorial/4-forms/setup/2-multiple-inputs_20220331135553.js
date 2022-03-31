@@ -23,7 +23,7 @@ if (person.firstName && person.email && person.age){
 
   const newPerson ={...person,id: new Date().getTime.toString()}
   setPeople([...people, newPerson])
-  setPerson({firstName:'', email:'', age:''})
+  setPerson({firstName:'', age:'', email:''})
 }
 
 };
@@ -65,11 +65,10 @@ if (person.firstName && person.email && person.age){
           <button type='submit' onClick={handleSubmit}>add person</button>
         </form>
         {people.map((person, index) => {
-          const { id, firstName, email, age } = person;
+          const { id, firstName, email } = person;
           return (
             <div className='item' key={id}>
               <h4>{firstName}</h4>
-             <p>{age}</p>
               <p>{email}</p>
             </div>
           );
