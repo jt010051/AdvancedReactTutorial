@@ -6,29 +6,18 @@ import React, { useEffect, useRef } from 'react';
 
 const UseRefBasics = () => {
   const refContainer = useRef(null)
-    const divContainer = useRef(null)
-
-  const handleSubmit =(e)=> {
-    e.preventDefault();
+  const handleSubmit =(e) 
   console.log(refContainer.current.value);
-  console.log(divContainer.current);
-  };
-  useEffect(()=>{
-
-    console.log(refContainer.current);
-    refContainer.current.focus();
-  })
+  }
+  console.log(refContainer);
   return <> <form className='form' onSubmit={handleSubmit}>
     <div>
 
       <input type="text" ref={refContainer} />
-      <button type='submit'>submit</button>
+      <button type='btn'>submit</button>
     </div>
     
-    </form> 
-    
-    <div ref={divContainer}> hello world</div>
-    </>
+    </form> </>;
 };
 
 export default UseRefBasics;
