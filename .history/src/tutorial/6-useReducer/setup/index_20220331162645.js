@@ -18,14 +18,17 @@ const Index = () => {
 
     e.preventDefault();
     if(name){
-
+setShowModal(true);
+setPeople([...people, {id: new Date().getTime.toString(), name}])
+setName('')
     }
     else{
+      setShowModal(true)
     }
   }
   return <>
   
-  {state.isModalOpen && <Modal modalContent ={state.modalContent} />}
+  {showModal && <Modal />}
 
   <form onSubmit={handleSubmit} className="form">
 <div>
@@ -36,7 +39,7 @@ const Index = () => {
 <button type='submit'>add</button>
 
   </form>
-  {state.people.map((person)=>{
+  {people.map((person)=>{
 return <div key={person.id}>
 <h4>{person.name}</h4>
 
