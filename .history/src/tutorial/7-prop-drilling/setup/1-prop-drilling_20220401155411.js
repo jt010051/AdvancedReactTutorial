@@ -24,7 +24,7 @@ const List = ({people, removePerson}) =>{
   {people.map((person)=>{
 
 return <SinglePerson key ={person.id} {...person}
-removePerson={removePerson}/>;
+/>;
 
   })}
   </>
