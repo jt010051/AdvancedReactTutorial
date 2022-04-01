@@ -3,8 +3,13 @@ import React, { useEffect } from 'react';
 const Modal = ({modalContent, closeModal}) => {
   useEffect(()=>{
 setTimeout(()=>{
-closeModal();
-}, 3000)
+closeModal(()=>{
+
+
+}, 3000);
+
+
+})
 
 
   })
