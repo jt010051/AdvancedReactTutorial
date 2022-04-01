@@ -4,13 +4,7 @@ import {data} from '../../../data'
 // fix - context api, redux (for more complex cases)
 
 const PropDrilling = () => {
-  const[people, setPeople] =useState(data)
-  const removePerson =(id)=>{
-setPeople((people)=>{
-      return people.filter((person)=>person.id!== id)
-
-})
-  }
+  const[people, setPeople] =useState[data]
   return <section>
 
     <h3>prop drilling</h3>

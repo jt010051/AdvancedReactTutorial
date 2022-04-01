@@ -5,12 +5,6 @@ import {data} from '../../../data'
 
 const PropDrilling = () => {
   const[people, setPeople] =useState(data)
-  const removePerson =(id)=>{
-setPeople((people)=>{
-      return people.filter((person)=>person.id!== id)
-
-})
-  }
   return <section>
 
     <h3>prop drilling</h3>
