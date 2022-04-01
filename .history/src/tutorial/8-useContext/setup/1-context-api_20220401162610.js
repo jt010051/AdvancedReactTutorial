@@ -16,7 +16,7 @@ const ContextAPI = () => {
   };
   return (
     <PersonContext.Provider value={{removePerson, people}}>
-      <h3>context api / UseContext</h3>
+      <h3>prop drilling</h3>
       <List  />
     </PersonContext.Provider>
   );
@@ -27,7 +27,7 @@ const List = () => {
   console.log(mainData);
   return (
     <>
-      {mainData.people.map((person) => {
+      {mainData.eople.map((person) => {
         return (
           <SinglePerson
             key={person.id}
